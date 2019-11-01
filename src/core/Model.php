@@ -18,7 +18,7 @@ class Model
         if($database === null) {
             $database = new MySql(); // set default database connection if not specified
         }
-        $this->db = ($database === null) ?  : $database->getConnection();
+        $this->db = $database->getConnection();
     }
 
     /**
